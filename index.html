@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DOM Series</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum quos possimus blanditiis error vero temporibus porro optio unde mollitia, beatae quisquam iusto perferendis quae similique praesentium ducimus corporis eius!</p>
+    </header>
+
+<main id="main-container">
+    
+    <section>
+        <h1>This is my first DOM Project</h1>
+        <ul>
+            <li>sazed</li>
+            <li>Sabita</li>
+            <li>ranvir</li>
+            <li>alia bhat</li>
+        </ul>
+    </section>
+
+    <section class="fruits-container">
+        <h1 id="fruits-title" class="title" >fruits I like</h1>
+        <ul>
+            <li>apple</li>
+            <li>Banana</li>
+            <li>Corrot</li>
+            <li>Mango</li>
+        </ul>
+
+    </section>
+
+    <section id="Places-Cotainer" class="large-text">
+        <h1 id="Places-title">Places i like Visit</h1>
+        <ul id="Places-list">
+            <li class="visited-places">SundarBan</li>
+            <li class="visited-places">bandarBan</li>
+            <li class="visited-places">kataban</li>
+            <li>cox'sBazar</li>
+        </ul>
+    </section>
+</main>
+    <script>
+        //........ get data form html in 5 ways........
+
+
+        // option -1: getElementsByTagName
+        const h1AllTag = document.getElementsByTagName('h1');
+        // console.log(h1AllTag);
+        for(const h1 of h1AllTag){
+            // console.log(h1);
+        }
+
+        // option-2: getElemetById
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'fruits title Change by js'
+
+        // option-3: getElementsByClassName
+        const Places = document.getElementsByClassName('visited-places');
+        for(const place of Places){
+            // console.log(place.innerText)
+        }
+
+        // option-4: querySelector
+            // wiil return the first one.
+
+
+        // option-5: querySelectorAll
+        const someLi = document.querySelectorAll('.fruits-container li')
+        console.log(someLi);
+        for(const li of someLi){
+            // console.log(li.innerText);
+        }
+
+    </script>
+    
+    <script src="./js/DOM.js"></script>
+    <script src="./js/append.js"></script>
+    <script src="./js/styleInJs.js"></script>
+
+</body>
+</html>

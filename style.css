@@ -1,0 +1,28 @@
+h1{
+    color: tomato;
+}
+
+h4{
+    color: red;
+}
+
+li{
+    color: green;
+}
+
+
+.visited-places{
+    color: blueviolet;
+}
+
+.yellow-bg{
+    background-color: rgb(150, 205, 207) !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.large-text{
+    font-size: 2rem;
+}
